@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Guru | Gurungaji.com</title>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./dist/img/logo-okoce.webp" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="bg-scheme-orange">
+    <!-- START NAVBAR -->
+    <nav class="bg-scheme-orange font-jost fixed top-0 left-0 right-0 border-gray-200 shadow-md z-40">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
+            <div class="px-2 ml-2 md:ml-0 flex flex-col justify-between hover:shadow-xl hover:rounded-lg" id="logo"">
+                <img src=" ./dist/img/logo.png" alt="" class="w-[100px]">
+            </div>
+
+            <!-- toggle menu hamburger -->
+            <button id="toggleButton" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 mr-2 justify-center text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <div class="hidden w-full lg:flex lg:w-auto" id="navbar-default">
+                <!-- LINK BERANDA -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="/" class="uppercase menu-hover my-2 py-2 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0" onClick="">
+                            Beranda
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK GURU -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="./cari-guru.html" class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Cari Guru
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK PROGRAM -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK INFORMASI -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            INFORMASI
+                        </a>
+                    </div>
+                    <!-- ANAK LINK INFORMASI -->
+                    <div class="invisible bg-scheme-orange absolute z-50 flex w-full flex-col py-1 px-4 text-white shadow-xl group-hover:visible"
+                        onClick="">
+                        <a href="/info.html#faq" class="my-2 text-sm block py-1 text-white md:mx-2">FAQ</a>
+                        <a href="/info.html#cara-daftar" class="my-2 text-sm block py-1 text-white md:mx-2">Cara
+                            Daftar</a>
+                        <a href="/info.html#kontak" class="my-2 text-sm block py-1 text-white md:mx-2">Kontak</a>
+                    </div>
+                </div>
+
+                <!-- LINK MASUK -->
+                <div class="py-2">
+                    <div class="flex flex-col md:flex-row items-center justify-center md:space-x-5 bg-scheme-orange px-4">
+                        <a href="./login.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            MASUK
+                        </a>
+
+                        <a href="./daftar.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            DAFTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START TITLE SECTION -->
+    <div class="pt-40 pb-16 bg-scheme-orange text-white">
+        <div class="lg:w-2/6 mx-auto">
+            <p class="uppercase text-center font-jost text-2xl lg:text-5xl font-bold drop-shadow-xl">BIODATA GURU</p>
+        </div>
+    </div>
+    <!-- END TITLE SECTION -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M 0 89 C 485 111 496 -7 1213 64 L 1441 93 L 1440 140 L 1380 140 C 1320 140 1200 140 1080 140 C 960 140 840 140 720 140 C 600 140 480 140 360 140 C 240 140 120 140 60 140 L 0 140 Z"
+        ></path>
+      </svg>
+
+    <!-- START EVENT DETAIL SECTION -->
+    <div id="about" class="w-full flex justify-center items-center bg-white pt-5">
+        <div class="w-3/4 flex flex-col lg:flex-row justify-center items-center">
+            <div class="relative flex w-full justify-center lg:justify-end flex-shrink-0 md:w-5/12 py-10 pr-0 lg:pr-4 text-justify">
+                <div class="flex items-center justify-center w-full h-full lg:pb-10 px-4">
+                    <div>
+                        <img src="./dist/img/profile.png" class="rounded-lg border border-solid">
+                    </div>
+                </div>
+            </div>
+            <div class="lg:mt-0 flex flex-col flex-grow pl-0 lg:pl-4 lg:pt-0 pb-10">
+                <div class="pb-5">
+                    <h3 id="about-headline"
+                        class="text-center lg:text-left font-poppins text-lg lg:text-3xl font-bold-700 text-slate-700 leading-relaxed">
+                        Abdul Hakim Ridwan, S.Ag.
+                    </h3>
+                </div>
+                <table class="table-auto text-slate-600 md:pb-0 border-collapse font-jost">
+                    <tbody>
+                      <tr>
+                        <td class="border p-2">Usia</td>
+                        <td class="border p-2">25</td>
+                      </tr>
+                      <tr>
+                        <td class="border p-2">Lokasi</td>
+                        <td class="border p-2">Bekasi Barat</td>
+                      </tr>
+                      <tr>
+                        <td class="border p-2">Profesi</td>
+                        <td class="border p-2">Guru Agama di SDIT Al-Hikmah</td>
+                      </tr>
+                      <tr>
+                        <td class="border p-2">Spesialisasi</td>
+                        <td class="border p-2">
+                            <div class="">
+                                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded inline-flex items-center my-1">
+                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M235.8,18.4c-6.3-6.3-15-10.2-24.5-10.2h-18.8c-9.6,0-18.2,3.9-24.5,10.2c-6.3,6.3-10.2,15-10.2,24.5v21.6c-0.1,0.4-0.1,0.8-0.1,1.2v26.6c0,3.8,3.1,6.9,6.9,6.9s6.9-3.1,6.9-6.9V73.7c8.7,2.5,15.1,10.5,15.1,20.1c0,11.5-9.3,20.9-20.9,20.9c-11.4,0-20.7-9.2-20.9-20.5V40.7c0,0-10.5,0-22,0c-11.5,0-20.2,9.2-20.2,9.2L21.4,132l0,0c-7,6.6-11.4,16-11.4,26.4c0,12.6,5.9,20.7,16.2,30.2l50.2,49.8h0.1c6.4,5.8,15,9.4,24.3,9.4c11.4,0,20.9-5.6,28.2-13.5c18.7-17.6,69.5-66.5,79.4-77.5c9.9-11,8.7-25.2,8.7-25.2V41.1h-45.9c0.4-5.1,2.7-9.7,6.2-13.2c3.9-3.9,9.2-6.2,15-6.2h18.8c5.8,0,11.1,2.4,15,6.2s6.2,9.2,6.2,15v4.5v0.1v26.6c0,3.8,3,6.9,6.7,6.9c3.7,0,6.7-3.1,6.7-6.9v-3.7v-23V43C246,33.4,242.1,24.7,235.8,18.4z"/></svg>
+                                    <span class="text-sm">Baca Tulis Al-Qur'an</span>
+                                </button>
+                                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded inline-flex items-center my-1">
+                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M235.8,18.4c-6.3-6.3-15-10.2-24.5-10.2h-18.8c-9.6,0-18.2,3.9-24.5,10.2c-6.3,6.3-10.2,15-10.2,24.5v21.6c-0.1,0.4-0.1,0.8-0.1,1.2v26.6c0,3.8,3.1,6.9,6.9,6.9s6.9-3.1,6.9-6.9V73.7c8.7,2.5,15.1,10.5,15.1,20.1c0,11.5-9.3,20.9-20.9,20.9c-11.4,0-20.7-9.2-20.9-20.5V40.7c0,0-10.5,0-22,0c-11.5,0-20.2,9.2-20.2,9.2L21.4,132l0,0c-7,6.6-11.4,16-11.4,26.4c0,12.6,5.9,20.7,16.2,30.2l50.2,49.8h0.1c6.4,5.8,15,9.4,24.3,9.4c11.4,0,20.9-5.6,28.2-13.5c18.7-17.6,69.5-66.5,79.4-77.5c9.9-11,8.7-25.2,8.7-25.2V41.1h-45.9c0.4-5.1,2.7-9.7,6.2-13.2c3.9-3.9,9.2-6.2,15-6.2h18.8c5.8,0,11.1,2.4,15,6.2s6.2,9.2,6.2,15v4.5v0.1v26.6c0,3.8,3,6.9,6.7,6.9c3.7,0,6.7-3.1,6.7-6.9v-3.7v-23V43C246,33.4,242.1,24.7,235.8,18.4z"/></svg>
+                                    <span class="text-sm">Fiqih</span>
+                                </button>
+                                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded inline-flex items-center my-1">
+                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M235.8,18.4c-6.3-6.3-15-10.2-24.5-10.2h-18.8c-9.6,0-18.2,3.9-24.5,10.2c-6.3,6.3-10.2,15-10.2,24.5v21.6c-0.1,0.4-0.1,0.8-0.1,1.2v26.6c0,3.8,3.1,6.9,6.9,6.9s6.9-3.1,6.9-6.9V73.7c8.7,2.5,15.1,10.5,15.1,20.1c0,11.5-9.3,20.9-20.9,20.9c-11.4,0-20.7-9.2-20.9-20.5V40.7c0,0-10.5,0-22,0c-11.5,0-20.2,9.2-20.2,9.2L21.4,132l0,0c-7,6.6-11.4,16-11.4,26.4c0,12.6,5.9,20.7,16.2,30.2l50.2,49.8h0.1c6.4,5.8,15,9.4,24.3,9.4c11.4,0,20.9-5.6,28.2-13.5c18.7-17.6,69.5-66.5,79.4-77.5c9.9-11,8.7-25.2,8.7-25.2V41.1h-45.9c0.4-5.1,2.7-9.7,6.2-13.2c3.9-3.9,9.2-6.2,15-6.2h18.8c5.8,0,11.1,2.4,15,6.2s6.2,9.2,6.2,15v4.5v0.1v26.6c0,3.8,3,6.9,6.7,6.9c3.7,0,6.7-3.1,6.7-6.9v-3.7v-23V43C246,33.4,242.1,24.7,235.8,18.4z"/></svg>
+                                    <span class="text-sm">Sirah</span>
+                                </button>
+                                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded inline-flex items-center my-1">
+                                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M235.8,18.4c-6.3-6.3-15-10.2-24.5-10.2h-18.8c-9.6,0-18.2,3.9-24.5,10.2c-6.3,6.3-10.2,15-10.2,24.5v21.6c-0.1,0.4-0.1,0.8-0.1,1.2v26.6c0,3.8,3.1,6.9,6.9,6.9s6.9-3.1,6.9-6.9V73.7c8.7,2.5,15.1,10.5,15.1,20.1c0,11.5-9.3,20.9-20.9,20.9c-11.4,0-20.7-9.2-20.9-20.5V40.7c0,0-10.5,0-22,0c-11.5,0-20.2,9.2-20.2,9.2L21.4,132l0,0c-7,6.6-11.4,16-11.4,26.4c0,12.6,5.9,20.7,16.2,30.2l50.2,49.8h0.1c6.4,5.8,15,9.4,24.3,9.4c11.4,0,20.9-5.6,28.2-13.5c18.7-17.6,69.5-66.5,79.4-77.5c9.9-11,8.7-25.2,8.7-25.2V41.1h-45.9c0.4-5.1,2.7-9.7,6.2-13.2c3.9-3.9,9.2-6.2,15-6.2h18.8c5.8,0,11.1,2.4,15,6.2s6.2,9.2,6.2,15v4.5v0.1v26.6c0,3.8,3,6.9,6.7,6.9c3.7,0,6.7-3.1,6.7-6.9v-3.7v-23V43C246,33.4,242.1,24.7,235.8,18.4z"/></svg>
+                                    <span class="text-sm">Bahasa Arab</span>
+                                </button>
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="pt-3">
+                    <div class="flex flex-col md:flex-row pt-5 pb-16 bg-white">
+                        <button id="" class="bg-scheme-orange hover:bg-okoce-blue lg:mr-5 my-1 font-jost rounded-half uppercase menu-hover py-2 px-4 text-sm lg:py-3 lg:px-10 lg:text-base font-medium text-white">
+                            COBA KELAS GRATIS
+                        </button>
+                        <button id="" class="bg-scheme-orange hover:bg-okoce-blue lg:mr-5 my-1 font-jost rounded-half uppercase menu-hover py-2 px-4 text-sm lg:py-3 lg:px-10 lg:text-base font-medium text-white">
+                            HUBUNGI GURU
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END EVENT DETAIL SECTION -->    
+
+    <!-- FAQ SECTION -->
+    <div id="faq" class="pt-16 bg-white pb-20">
+        <h1 class="font-sarabun text-2xl text-slate-700 lg:text-4xl font-bold-700 text-center mb-10">Ulasan dan <span class="text-scheme-orange">Testimoni</span></h1>
+        <div class="container w-10/12 flex flex-col md:flex-row mx-auto">
+            <div class="expandable-div lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <h4 class="w-full mb-5 font-semibold">John Doe</h4>
+                <p class="reveal hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="pt-3">Alhamduliilah cara mengajarnya sangat baik</p>
+            </div>
+            <div class="expandable-div lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <h4 class="w-full mb-5 font-semibold">John Doe</h4>
+                <p class="reveal hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="pt-3">Alhamduliilah cara mengajarnya sangat baik</p>
+            </div>
+            <div class="expandable-div lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <h4 class="w-full mb-5 font-semibold">John Doe</h4>
+                <p class="reveal hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="pt-3">Alhamduliilah cara mengajarnya sangat baik</p>
+            </div>
+            <div class="expandable-div lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <h4 class="w-full mb-5 font-semibold">John Doe</h4>
+                <p class="reveal hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="pt-3">Alhamduliilah cara mengajarnya sangat baik</p>
+            </div>
+        </div>    
+    </div>
+    <!-- END FAQ SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer class="bg-scheme-orange font-sarabun">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="./dist/img/logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Guru Ngaji</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Tentang Kami</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Kebijakan Privasi</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Syarat dan Ketentuan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Program</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline ">Online</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Offline</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow Us</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="/index.html" class="hover:underline">Guru Ngaji™</a>
+            </span>
+        </div>
+        </div>
+    </footer>    
+    <!-- END FOOTER SECTION -->
+</body>
+<!-- javascript -->
+<script src="./js/script.js"></script>
+<script>
+    const logo = document.getElementById('logo');
+
+    logo.addEventListener('click', () => {
+        window.location.href = '/';
+    });
+</script>
+</html>

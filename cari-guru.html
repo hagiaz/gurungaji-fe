@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Guru | Gurungaji.com </title>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./dist/img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-scheme-orange">
+    <!-- START NAVBAR -->
+    <nav class="bg-scheme-orange font-jost fixed top-0 left-0 right-0 border-gray-200 shadow-md z-40">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
+            <div class="px-2 ml-2 md:ml-0 flex flex-col justify-between hover:shadow-xl hover:rounded-lg" id="logo"">
+                <img src=" ./dist/img/logo.png" alt="" class="w-[100px]">
+            </div>
+
+            <!-- toggle menu hamburger -->
+            <button id="toggleButton" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 mr-2 justify-center text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <div class="hidden w-full lg:flex lg:w-auto" id="navbar-default">
+                <!-- LINK BERANDA -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="/" class="uppercase menu-hover my-2 py-2 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0" onClick="">
+                            Beranda
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK GURU -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="./cari-guru.html" class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Cari Guru
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK PROGRAM -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK INFORMASI -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            INFORMASI
+                        </a>
+                    </div>
+                    <!-- ANAK LINK INFORMASI -->
+                    <div class="invisible bg-scheme-orange absolute z-50 flex w-full flex-col py-1 px-4 text-white shadow-xl group-hover:visible"
+                        onClick="">
+                        <a href="/info.html#faq" class="my-2 text-sm block py-1 text-white md:mx-2">FAQ</a>
+                        <a href="/info.html#cara-daftar" class="my-2 text-sm block py-1 text-white md:mx-2">Cara
+                            Daftar</a>
+                        <a href="/info.html#kontak" class="my-2 text-sm block py-1 text-white md:mx-2">Kontak</a>
+                    </div>
+                </div>
+
+                <!-- LINK MASUK -->
+                <div class="py-2">
+                    <div class="flex flex-col md:flex-row items-center justify-center md:space-x-5 bg-scheme-orange px-4">
+                        <a href="./login.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            MASUK
+                        </a>
+
+                        <a href="./daftar.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            DAFTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START TITLE SECTION -->
+    <div class="pt-40 pb-16 bg-scheme-orange text-white">
+        <div class="lg:w-2/6 mx-auto">
+            <p class="uppercase text-center font-jost text-3xl md:text-5xl font-bold drop-shadow-xl">CARI GURU</p>
+        </div>
+    </div>
+    <!-- END TITLE SECTION -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M 0 59 C 243.6667 38.3333 213 30 370 55 C 796 111 688 15 967 35 L 1441 63 L 1440 110 L 1380 110 C 1320 110 1200 110 1080 110 C 960 110 840 110 720 110 C 600 110 480 110 360 110 C 240 110 120 110 60 110 L 0 110 Z"
+        ></path>
+      </svg>  
+
+    <!-- FAQ SECTION -->
+    <div id="faq" class="pt-16 bg-white pb-20">
+        <h1 class="font-sarabun text-2xl text-slate-700 md:text-4xl font-bold-700 text-center mb-10">Filter</h1>
+        <div class="container w-10/12 flex flex-col md:flex-row mx-auto">
+            <div class="md:flex-row w-11/12 mx-auto md:w-full rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <form class="w-full pb-5">
+                    <div class="flex">
+                        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">Cari Semua<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                        </button>
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                            <li>
+                                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nama</button>
+                            </li>
+                            <li>
+                                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spesialisasi</button>
+                            </li>
+                            <li>
+                                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Lokasi</button>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="relative w-full">
+                            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Cari nama, lokasi, spesialisasi..." required />
+                            <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center pb-5">
+                    <button class="bg-white text-gray-800 py-2 px-4 lg:mr-2 rounded inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                            <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                            </svg>
+                            <p class="">Quick Search</p>
+                    </button>
+                </div>
+                <div class="text-center">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 lg:mr-2 rounded inline-flex items-center my-1">
+                        <p>Terdekat</p>
+                    </button>
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 lg:mr-2 rounded inline-flex items-center my-1">
+                        <p>Rating Tertinggi</p>
+                    </button>
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 lg:mr-2 rounded inline-flex items-center my-1">
+                        <p>Baca Tulis Al-Qur'an</p>
+                    </button>
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 lg:mr-2 rounded inline-flex items-center my-1">
+                        <p>Tajwid</p>
+                    </button>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="pt-1 bg-white pb-20">
+        <div class="container flex flex-col md:flex-row mx-auto">
+            <div class="lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl md:mx-2 h-fit text-slate-700 font-jost p-6 mt-3 hidden md:block">
+                <img src="./dist/img/profile.png" class="rounded-lg mb-5">
+                <h4 class="w-full text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-center mt-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p class="mt-5 text-center text-okoce-blue">Lihat Detail</p></a>
+            </div>
+            <div class="lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl md:mx-2 h-fit text-slate-700 font-jost p-6 mt-3 hidden md:block">
+                <img src="./dist/img/profile.png" class="rounded-lg mb-5">
+                <h4 class="w-full text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-center mt-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p class="mt-5 text-center text-okoce-blue">Lihat Detail</p></a>
+            </div>
+            <div class="lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl md:mx-2 h-fit text-slate-700 font-jost p-6 mt-3 hidden md:block">
+                <img src="./dist/img/profile.png" class="rounded-lg mb-5">
+                <h4 class="w-full text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-center mt-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p class="mt-5 text-center text-okoce-blue">Lihat Detail</p></a>
+            </div>
+            <div class="lg:w-1/4 rounded-lg border border-solid border-gray-300 shadow-xl md:mx-2 h-fit text-slate-700 font-jost p-6 mt-3 hidden md:block">
+                <img src="./dist/img/profile.png" class="rounded-lg mb-5">
+                <h4 class="w-full text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-center mt-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p class="mt-5 text-center text-okoce-blue">Lihat Detail</p></a>
+            </div>
+        </div>
+        <div class="container flex flex-col md:flex-row mx-auto block md:hidden">
+            <div class="flex flex-row w-11/12 mx-auto rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <img src="./dist/img/profile.png" class="rounded-lg my-auto max-h-28">
+                <div class="my-auto pl-3 md:pl-5">
+                <h4 class="w-full text-left md:text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-left md:text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-left md:text-center my-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p>Detail>></p></a>
+                </div>
+            </div>
+            <div class="flex flex-row w-11/12 mx-auto rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <img src="./dist/img/profile.png" class="rounded-lg my-auto max-h-28">
+                <div class="my-auto pl-3 md:pl-5">
+                <h4 class="w-full text-left md:text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-left md:text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-left md:text-center my-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p>Detail>></p></a>
+                </div>
+            </div>
+            <div class="flex flex-row w-11/12 mx-auto rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <img src="./dist/img/profile.png" class="rounded-lg my-auto max-h-28">
+                <div class="my-auto pl-3 md:pl-5">
+                <h4 class="w-full text-left md:text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-left md:text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-left md:text-center my-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p>Detail>></p></a>
+                </div>
+            </div>
+            <div class="flex flex-row w-11/12 mx-auto rounded-lg border border-solid border-gray-300 shadow-xl lg:mx-2 h-fit text-slate-700 font-jost p-6 mt-3">
+                <img src="./dist/img/profile.png" class="rounded-lg my-auto max-h-28">
+                <div class="my-auto pl-3 md:pl-5">
+                <h4 class="w-full text-left md:text-center mb-3 font-semibold text-xl">John Doe</h4>
+                <p class="text-left md:text-center hover:text-blue-300">⭐⭐⭐⭐⭐</p>
+                <p class="text-left md:text-center my-5">Bekasi, Jawa Barat</p>
+                <a href="./event.html"><p>Detail>></p></a>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="pt-5 pb-20 bg-white">
+        <nav aria-label="Page navigation" class="">
+            <ul class="flex items-center justify-center">
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">
+                <span class="sr-only">Previous</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" aria-current="page" class="z-10 flex items-center justify-center px-4 h-10 leading-tight text-blue-600 border border-blue-300 bg-blue-100 hover:bg-blue-100 hover:text-blue-700">1</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">3</a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">
+                <span class="sr-only">Next</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- END FAQ SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer class="bg-scheme-orange font-sarabun">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="./dist/img/logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Guru Ngaji</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Tentang Kami</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Kebijakan Privasi</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Syarat dan Ketentuan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Program</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline ">Online</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Offline</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow Us</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="/index.html" class="hover:underline">Guru Ngaji™</a>
+            </span>
+        </div>
+        </div>
+    </footer>   
+    <!-- END FOOTER SECTION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script></body>
+<!-- javascript -->
+<script src="./js/script.js"></script>
+<script>
+    const logo = document.getElementById('logo');
+
+    logo.addEventListener('click', () => {
+        window.location.href = '/';
+    });
+</script>
+</html>

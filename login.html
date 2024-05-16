@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Gurungaji.com</title>
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./dist/img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- START NAVBAR -->
+    <nav class="bg-scheme-orange font-jost fixed top-0 left-0 right-0 border-gray-200 shadow-md z-40">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
+            <div class="px-2 ml-2 md:ml-0 flex flex-col justify-between hover:shadow-xl hover:rounded-lg" id="logo"">
+                <img src=" ./dist/img/logo.png" alt="" class="w-[100px]">
+            </div>
+
+            <!-- toggle menu hamburger -->
+            <button id="toggleButton" data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 mr-2 justify-center text-sm text-white rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <div class="hidden w-full lg:flex lg:w-auto" id="navbar-default">
+                <!-- LINK BERANDA -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="/" class="uppercase menu-hover my-2 py-2 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0" onClick="">
+                            Beranda
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK GURU -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a href="./cari-guru.html" class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Cari Guru
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK PROGRAM -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LINK INFORMASI -->
+                <div class="group relative cursor-pointer py-2">
+                    <div class="flex items-center justify-between space-x-5 bg-scheme-orange xl:px-5">
+                        <a class="uppercase menu-hover my-2 py-2 pr-5 text-sm font-medium text-white lg:mx-4 ml-7 lg:ml-0"
+                            onClick="">
+                            INFORMASI
+                        </a>
+                    </div>
+                    <!-- ANAK LINK INFORMASI -->
+                    <div class="invisible bg-scheme-orange absolute z-50 flex w-full flex-col py-1 px-4 text-white shadow-xl group-hover:visible"
+                        onClick="">
+                        <a href="/info.html#faq" class="my-2 text-sm block py-1 text-white md:mx-2">FAQ</a>
+                        <a href="/info.html#cara-daftar" class="my-2 text-sm block py-1 text-white md:mx-2">Cara
+                            Daftar</a>
+                        <a href="/info.html#kontak" class="my-2 text-sm block py-1 text-white md:mx-2">Kontak</a>
+                    </div>
+                </div>
+
+                <!-- LINK MASUK -->
+                <div class="py-2">
+                    <div class="flex flex-col md:flex-row items-center justify-center md:space-x-5 bg-scheme-orange px-4">
+                        <a href="./login.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            MASUK
+                        </a>
+
+                        <a href="./daftar.html" target="blank"
+                            class="bg-white rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            DAFTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div id="login-page" class="w-full flex justify-center pt-40 pb-28 font-sarabun bg-white">
+        <div class="w-full lg:w-3/4 flex flex-col lg:flex-row lg:shadow-xl rounded-lg">
+            <!-- login section -->
+            <div class="p-10 lg:w-1/2">
+                <div>
+                    <h1 class="text-2xl font-semibold text-slate-700">Login</h1>
+                </div>
+                <div class="py-8">
+                    <form action="">
+                        <div class="flex flex-col pb-5">
+                            <label for="email" class="py-1 text-slate-600">Alamat e-mail</label>
+                            <input type="email" name="email" id="email" required class="border rounded-md px-5 py-2 bg-white">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="password" class="py-1 text-slate-600">Password</label>
+                            <input type="password" name="password" id="password" required class="border rounded-md px-5 py-2 bg-white">
+                        </div>
+
+                        <div class="flex justify-between py-5">
+                            <div class="flex items-center">
+                                <input id="remember-me" type="checkbox" class="bg-white">
+                                <label for="remember-me" class="text-slate-600 pl-2">Ingat Saya</label>
+                            </div>
+                            <div>
+                                <a class="text-slate-600 font-semibold" href="#">Lupa Password</a>
+                            </div>
+                        </div>
+
+                        <button class="uppercase text-white bg-scheme-orange px-5 py-2 rounded-half font-semibold">Masuk</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- register section -->
+            <div class="flex lg:bg-gradient-to-r from-scheme-orange to-amber-400 items-center rounded-r-lg w-full lg:w-1/2">
+                <div class="hidden w-full px-10 lg:flex flex-col justify-between">
+                    <p class="text-white font-bold text-2xl pb-5">Belum mempunyai akun?</p>
+                    <div>
+                        <a href="/daftar.html" target="blank"
+                            class="bg-white w-auto rounded-half uppercase menu-hover my-2 py-2 px-5 text-sm font-medium text-scheme-orange"
+                            onClick="">
+                            DAFTAR
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:hidden">
+                    <p class="text-center">Belum mempunyai akun? Daftar <a href="/daftar.html" class="text-okoce-blue">disini</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START FOOTER SECTION -->
+    <footer class="bg-scheme-orange font-sarabun">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="./dist/img/logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Guru Ngaji</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Tentang Kami</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline">Kebijakan Privasi</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Syarat dan Ketentuan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Program</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline ">Online</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline">Offline</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow Us</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="/index.html" class="hover:underline">Guru Ngaji™</a>
+            </span>
+        </div>
+        </div>
+    </footer> 
+    <!-- END FOOTER SECTION -->
+</body>
+<script src="../js/script.js"></script>
+</html>

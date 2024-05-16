@@ -1,0 +1,179 @@
+/* abaikan warning Unknown at rule @tailwindcss(unknownAtRules) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #2994D1;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+
+/* START GLASS BACKGROUND */
+.bg-glass {
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/* END GLASS BACKGROUND */
+
+/* START MASTER MENTOR HERO IFRAME VID */
+#hero-iframe {
+    width: 78%;
+    height: 100%;
+}
+/* END MASTER MENTOR HERO IFRAME VID */
+
+/* Start Height Responsivity */
+@media screen and (max-width: 1200px) {
+    #hero-iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    #hero #hero-headline {
+      font-size: 36px; /* Ukuran font untuk layar dengan tinggi kurang dari 700px */
+    }
+
+    #about #about-headline {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-height: 768px) and (min-width: 768px) {
+    #hero #hero-headline {
+      font-size: 56px; /* Ukuran font untuk layar dengan tinggi kurang dari 700px */
+    }
+}
+
+/* End Height Responsivity */
+
+/* START MITRA KERJASAMA ANIMATION */
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.move-left-right {
+    animation: moveLeftRight 35s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes moveLeftRight {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+
+    .move-left-right {
+        animation: moveLeftRight 30s linear infinite;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+    @keyframes moveLeftRight {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-450%);
+        }
+    }
+
+    .move-left-right {
+        animation: moveLeftRight 30s linear infinite;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #pelatihan-card {
+        width: 20rem;
+    }
+}
+
+/* END MITRA KERJASAMA ANIMATION */
